@@ -1,5 +1,4 @@
 import Form from "@/app/components/FormAdd";
-formAdd;
 function ArticleBuilder() {
   return (
     <div
