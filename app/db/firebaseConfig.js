@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAU8i7a6YpBs8XwGvtjbEFifigoOP_jvCA",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "pinterest-clone-2f3ef.firebaseapp.com",
   projectId: "pinterest-clone-2f3ef",
   storageBucket: "pinterest-clone-2f3ef.appspot.com",
   messagingSenderId: "737254014321",
-  appId: "1:737254014321:web:70cad7270a70ad85324ad0",
+  appId: process.env.FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
