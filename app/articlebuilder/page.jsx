@@ -1,4 +1,4 @@
-import Form from "../app/components/FormAdd";
+import Form from "@/app/components/FormAdd";
 formAdd;
 function ArticleBuilder() {
   return (
