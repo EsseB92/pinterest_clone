@@ -1,5 +1,5 @@
-import Form from "@/app/components/formAdd";
-import React from "react";
+import Form from "../app/components/FormAdd";
+formAdd;
 function ArticleBuilder() {
   return (
     <div
