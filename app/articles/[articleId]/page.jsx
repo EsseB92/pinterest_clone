@@ -1,12 +1,12 @@
 "use client";
 
+import ArticleImage from "@/app/components/ArticleImage";
+import ArticleInfo from "@/app/components/ArticleInfo";
 import app from "@/app/db/firebaseConfig";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
 import { useRouter } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { HiArrowSmallLeft } from "react-icons/hi2";
-import ArticleImage from "../../components/ArticleImage";
-import ArticleInfo from "../../components/ArticleInfo";
 
 function ArticlesDetails({ params }) {
   const router = useRouter();

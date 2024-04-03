@@ -1,12 +1,12 @@
 "use client";
-import UploadImage from "@/app/components/uploadImage";
+import UploadImage from "@/app/components/UploadImage";
 import UserTag from "@/app/components/UserTag";
 import app from "@/app/db/firebaseConfig";
 import { doc, getFirestore, setDoc } from "firebase/firestore";
 import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Form() {
   const { data: session } = useSession();

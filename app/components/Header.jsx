@@ -1,5 +1,7 @@
 "use client";
 
+import app from "@/app/db/firebaseConfig";
+import Logo from "@/public/logo-pinterest.svg";
 import { doc, getFirestore, setDoc } from "firebase/firestore";
 import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
@@ -7,8 +9,6 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { FaPlus, FaUserCircle } from "react-icons/fa";
 import { IoIosArrowDown, IoMdNotifications, IoMdSearch } from "react-icons/io";
-import Logo from "../../public/logo-pinterest.svg";
-import app from "../db/firebaseConfig";
 
 export default function Header() {
   const { data: session } = useSession();

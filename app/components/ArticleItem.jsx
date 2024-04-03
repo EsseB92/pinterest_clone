@@ -1,7 +1,6 @@
 import UserTag from "@/app/components/UserTag";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import React from "react";
 
 function ArticleItem({ item }) {
   const router = useRouter();
